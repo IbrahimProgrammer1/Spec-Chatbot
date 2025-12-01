@@ -1,8 +1,8 @@
 import { forwardRef, ButtonHTMLAttributes } from "react";
-import { clsx } from "clsx";
+import { clsx, ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-function cn(...inputs: (string | undefined | null | boolean)[]) {
+function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
